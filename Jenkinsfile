@@ -30,6 +30,7 @@ pipeline {
                 sh '''
                     echo "Line 1"
                     echo "Line 2"
+                    ls -lah /var/lib
                 '''
                 // sh "python --version"
                 echo 'End of Stage Deploy'
