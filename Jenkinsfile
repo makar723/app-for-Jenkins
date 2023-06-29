@@ -17,7 +17,10 @@ pipeline {
             steps {
                 echo 'Start of Stage Test'
                 echo 'Testing...'
-                sh "ls -lah"
+                sh '''
+                  pwd
+                  ls -lah
+                '''
                 echo "Hello ${OWNER_NAME}"
                 echo "Project name is ${PROJECT_NAME}"
                 echo 'End of Stage Test'
